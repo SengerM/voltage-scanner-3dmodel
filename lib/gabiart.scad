@@ -89,4 +89,4 @@ module serie507(codigo) {
     
 }
 
-serie507(4002);
+serie507(2002);

@@ -9,7 +9,7 @@ module pin(x=0,y=0,oriented_down=true) {
         color([.5,.5,.5])
         translate([x,y,0])
         rotate(a=180, v=[1,0,0])
-        cylinder(h=10, r=.5);
+        cylinder(h=5, r=.5);
     }
 }
 
