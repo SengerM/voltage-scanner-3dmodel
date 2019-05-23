@@ -17,7 +17,7 @@ translate([-2,400,20])
     rotate(180,[0,0,1])
         interlock();
 
-translate([10,230,0])
+translate([10,210,0])
     rotate(90, [0,0,-1])
         battery(AH=4.3);
 
@@ -46,23 +46,23 @@ translate([328+2,390,15])
     rotate(90,[0,1,0])
         BUP_3770(color=[0,.6,0]);
 
-translate([100,10,25]) {
+translate([100,10,30]) {
     for (i = [0:4]) {
         translate([0, M2C_Y_LEN*i*1.01, 0])
             M2C();
-        translate([0, M2C_Y_LEN*i*1.01 + M2C_Y_LEN, 40])
-            rotate(a=180, v=[1,0,0])
-                M2C();
+//        translate([0, M2C_Y_LEN*i*1.01 + M2C_Y_LEN, 30])
+//            rotate(a=180, v=[1,0,0])
+//                M2C();
     }
 }
 
-translate([280,80,20])
+translate([260,80,20])
     rotate(90, [0,0,1])
         rotate(90, [1,0,0])
             STAR_CONN_PCB();
 
-translate([230,330,25]) {
-    translate([180919PCB_X_LEN,0,40])
+translate([230,330,30]) {
+    translate([180919PCB_X_LEN,0,30])
         rotate(180, [0,1,0])
             180919PCB();
 
@@ -80,4 +80,4 @@ translate([328+2,350,50])
             logo_inti_con_marco(size=25);
 
 color([1,1,1,.6])
-    serie507(2002);
+    serie507(3002);
